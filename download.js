@@ -32,7 +32,7 @@ const downloadAsset = asset => {
     mkdir -p ${distFolder} && \
     wget ${asset.browser_download_url} -O ${distFolder}/download.tar.gz && \
     tar xzf ${distFolder}/download.tar.gz -C ${distFolder}/ && \
-    mv ${untarFolder}/fd ${distFolder}/fd && \
+    mv ${untarFolder}/hyperfine ${distFolder}/hyperfine && \
     rm -rf ${untarFolder} ${distFolder}/download.tar.gz
   `,
     error => {
@@ -46,7 +46,7 @@ const downloadAsset = asset => {
 const req = request(
   {
     hostname: 'api.github.com',
-    path: '/repos/sharkdp/fd/releases/latest',
+    path: '/repos/sharkdp/hyperfine/releases/latest',
     method: 'GET',
     headers: {
       'User-Agent':

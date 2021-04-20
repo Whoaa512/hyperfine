@@ -1,11 +1,11 @@
 {
-  "name": "fd-find",
-  "description": "fd command as an npm package",
-  "version": "1.0.7",
-  "author": "Pablo Varela <pablovarela182@gmail.com>",
+  "name": "hyperfine",
+  "description": "hyperfine command as an npm package",
+  "version": "1.0.0",
+  "author": "C.J. Winslow <whoaa512@gmail.com> (http://github.com/whoaa512)",
   "bugs": {
-    "url": "https://github.com/pablopunk/fd-find/issues",
-    "email": "pablovarela182@gmail.com"
+    "url": "https://github.com/whoaa512/hyperfine/issues",
+    "email": "whoaa512@gmail.com"
   },
   "contributors": [
     "Pablo Varela <pablovarela182@gmail.com>"
@@ -16,10 +16,11 @@
     "pretty-quick": "*",
     "husky": "*"
   },
-  "homepage": "https://github.com/pablopunk/fd-find",
+  "homepage": "https://github.com/whoaa512/hyperfine",
   "keywords": [
-    "fd",
-    "find",
+    "hyperfine",
+    "bench",
+    "benchmark",
     "command",
     "install",
     "easy",
@@ -29,11 +30,11 @@
   "license": "MIT",
   "main": "cli",
   "bin": {
-    "fd": "dist/fd"
+    "hyperfine": "dist/hyperfine"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && echo 'echo fd failed to install, please install it again' > dist/fd"
+      "pre-commit": "pretty-quick --staged && echo 'echo hyperfine failed to install, please install it again' > dist/hyperfine"
     }
   },
   "prettier": {
@@ -43,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pablopunk/fd-find"
+    "url": "https://github.com/whoaa512/hyperfine"
   },
   "scripts": {
     "postinstall": "node download.js"
